@@ -1,6 +1,6 @@
 <?php
 
-interface PatientManagementInterface {
+interface PhysicianManagementInterface {
 	public function isLoggedOn();
 	public function requestPatientMedicalHistory();
 	public function requestPatientMedicalNotes();
