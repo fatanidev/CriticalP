@@ -1,6 +1,7 @@
 <?php
 require_once "Profile.php";
-class Physician extends Profile{
+require_once "PhyicianManagementInterface.php";
+class Physician extends Profile implements PhyicianManagementInterface {
   // Properties
   public $role;
   public $certificate;
@@ -35,7 +36,30 @@ class Physician extends Profile{
   function get_enrolledDate() {
     return $this->enrolledDate;
   }   
-  
+	public function isLoggedOn(){
+		
+	}
+	public function requestPatientMedicalHistory(){
+		
+	}
+	public function requestPatientMedicalNotes(){
+		
+	}
+	public function requestPatientAllergy(){
+		
+	}
+	public function sendMessageToPatient(){
+		
+	}
+	public function setAppointment(){
+		
+	}
+	public function setNewNote(){
+		
+	}
+	public function setTreatment(){
+		
+	}	  
  
 }
 
