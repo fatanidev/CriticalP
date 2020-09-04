@@ -2,7 +2,7 @@
 require_once "Profile.php";
 require_once "PatientManagementInterface.php";
 
-class MonitoringData implements PatientManagementInterface{
+class MonitoringData implements MonitoringDataManagementInterface{
   // Properties
   public $id;
   public $dateRecorded;

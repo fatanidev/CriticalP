@@ -2,7 +2,7 @@
 require_once "Profile.php";
 require_once "PatientManagementInterface.php";
 
-class Appointment implements PatientManagementInterface{
+class Appointment implements AppointmentManagementInterface{
   // Properties
   public $id;
   public $patientId;
