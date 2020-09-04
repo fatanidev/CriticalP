@@ -1,6 +1,5 @@
 <?php
-require_once "Profile.php";
-require_once "PatientManagementInterface.php";
+require_once "TreatmentManagementInterface.php";
 
 class Treatment implements TreatmentManagementInterface{
   // Properties

@@ -63,19 +63,3 @@ class Physician extends Profile implements PhyicianManagementInterface {
  
 }
 
-$testPatient = new Physician();
-$testPatient->set_id(1);
-$testPatient->set_name("Sabba Fatani");
-$testPatient->set_address("7 Witcham Close");
-$testPatient->set_phoneNumber("07588911121");
-
-$testPatient->set_role("Surgeon");
-$testPatient->set_certificate(" Distinction - Dental School of Oxford ");
-$testPatient->set_enrolledDate("25/10/2003");
-
-
-
-echo $testPatient->get_name();
-echo $testPatient->get_certificate();
-echo "<br>";
-?>

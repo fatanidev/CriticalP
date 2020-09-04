@@ -42,11 +42,5 @@ class Profile{
   }    
 }
 
-$apple = new Profile();
 
-
-
-
-echo $apple->get_name();
-echo "<br>";
 ?>

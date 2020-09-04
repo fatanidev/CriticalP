@@ -1,6 +1,6 @@
 <?php
-require_once "Profile.php";
-require_once "PatientManagementInterface.php";
+
+require_once "AppointmentManagementInterface.php";
 
 class Appointment implements AppointmentManagementInterface{
   // Properties
