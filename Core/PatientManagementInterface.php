@@ -5,4 +5,5 @@ interface PatientManagementInterface {
 	public function recordMonitoringData();
 	public function sendMessageToPhysician();
 	public function checkBookingDetails();	
+}
 ?>

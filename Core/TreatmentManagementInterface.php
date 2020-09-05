@@ -2,4 +2,5 @@
 
 interface TreatmentManagementInterface {
 	public function notifyUserTreatmentDetails();
+}
 ?>

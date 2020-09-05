@@ -8,7 +8,7 @@ class Symptom{
   public $userId;
   public $viewedByStaffId;
   //constructor
-  function __construct($id, $title, $description, $userId, $viewedByStaffId;){
+  function __construct($id, $title, $description, $userId, $viewedByStaffId){
     $this->id = $id;
     $this->title = $title;
 	$this->description = $description;

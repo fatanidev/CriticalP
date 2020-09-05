@@ -9,7 +9,7 @@ class Prescription{
   public $staffId;
   
   //constructor
-  function __construct($id, $medicationId, $StartDate, $endDate, $staffId;){
+  function __construct($id, $medicationId, $StartDate, $endDate, $staffId){
     $this->id = $id;
     $this->medicationId = $medicationId;
 	$this->StartDate = $StartDate;

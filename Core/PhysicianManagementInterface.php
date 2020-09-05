@@ -9,5 +9,5 @@ interface PhysicianManagementInterface {
 	public function setAppointment();
 	public function setNewNote();
 	public function setTreatment();	
-	
+}
 ?>

@@ -1,14 +1,15 @@
 <?php
 require_once "Profile.php";
-require_once "PhyicianManagementInterface.php";
-class Physician extends Profile implements PhyicianManagementInterface {
+require_once "PhysicianManagementInterface.php";
+class Physician extends Profile implements PhysicianManagementInterface {
   // Properties
   public $role;
   public $certificate;
   public $enrolledDate;
   
   // construtor
-  function __construct($role, $certificate, $enrolledDate){
+  function __construct($id, $name, $address, $phoneNumber, $role, $certificate, $enrolledDate){
+	parent::__construct($id, $name, $address, $phoneNumber);
     $this->role = $role;
     $this->certificate = $certificate;	
     $this->enrolledDate = $enrolledDate;	

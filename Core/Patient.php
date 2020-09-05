@@ -6,7 +6,8 @@ class Patient extends Profile implements PatientManagementInterface{
   // Properties
   public $joinedDate;
   public $previousHospital;
-  function __construct($joinedDate, $previousHospital){
+  function __construct($id, $name, $address, $phoneNumber,$joinedDate, $previousHospital){
+	parent::__construct($id, $name, $address, $phoneNumber);
     $this->joinedDate = $joinedDate;
     $this->previousHospital = $previousHospital;	
   }
