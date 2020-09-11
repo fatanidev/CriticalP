@@ -5,15 +5,19 @@ require_once "MonitoringDataManagementInterface.php";
 class MonitoringData implements MonitoringDataManagementInterface{
   // Properties
   public $id;
+  public $userid;
   public $dateRecorded;
   public $timeRecorded;
   public $value;
+  public $activity;
   //constructor
-  function __construct($id, $dateRecorded, $timeRecorded, $value){
+  function __construct($id, $userid, $dateRecorded, $timeRecorded, $value, $activity){
     $this->id = $id;
+    $this->userid = $userid;
     $this->dateRecorded = $dateRecorded;
 	$this->timeRecorded = $timeRecorded;
 	$this->value = $value;
+	$this->activity = $activity;
   }
   
   // Methods to create the object
@@ -23,17 +27,22 @@ class MonitoringData implements MonitoringDataManagementInterface{
   function get_id() {
     return $this->id;
   } 
-  
+  function set_userid($userid) {
+    $this->userid = $userid;
+  }
+  function get_userid() {
+    return $this->userid;
+  }   
   function set_dateRecorded($dateRecorded) {
     $this->dateRecorded = $dateRecorded;
   }
   function get_dateRecorded() {
     return $this->dateRecorded;
   }
-  function set_time($time) {
-    $this->timeRecorded = $time;
+  function set_timeRecorded($timeRecorded) {
+    $this->timeRecorded = $timeRecorded;
   }
-  function get_time() {
+  function get_timeRecorded() {
     return $this->timeRecorded;
   } 
   
@@ -43,7 +52,12 @@ class MonitoringData implements MonitoringDataManagementInterface{
   function get_value() {
     return $this->value;
   }  
-  
+  function set_activity($activity) {
+    $this->activity = $activity;
+  }
+  function get_activity() {
+    return $this->activity;
+  }   
 	// Interface Functions
 	public function SetMonitoringData(){
 		
